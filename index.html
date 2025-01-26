@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q3 Seatwork 1 </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            font-family: Rockwell;
+
+            }
+        kbd,p{
+            font-size: 90px;
+
+            }
+        img{
+            height: 150px;
+            width: 140px;
+        }
+        a{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-info text-light">
+<br><br>
+    
+<div class="container">
+
+    <center>
+    <img src="https://i.pinimg.com/originals/55/b8/b6/55b8b641da425fc46b8599ca6d08bf52.gif">
+    <br><br>
+
+<div class="col-md-12">
+    <h2>Click the buttons below to convert</h2>
+    <kbd id="amount"></kbd>
+    <h2>pesos to the following currencies:</h2>
+</div>
+
+<script>
+    var php = 100; // given value in peso
+    document.getElementById("amount").textContent = php; // Dynamically set the value inside <kbd>
+</script>
+
+    </center>
+
+
+    <br>
+
+    <center>     
+    <div class="col-md-12">
+        <p id="display"></p>
+        <br>
+        <button type="button" class="btn btn-primary" onclick="var php = 100; var $yen=0.37; document.getElementById('display').innerHTML= '<kbd>' + php/$yen + '</kbd>';">Yen</button>
+         <button type="button" class="btn btn-warning" onclick="var php = 100; var euro=61.15; document.getElementById('display').innerHTML= '<kbd>' + php/euro + '</kbd>';">Euro</button>
+         <button type="button" class="btn btn-primary" onclick="var php = 100; var pound=72.71; document.getElementById('display').innerHTML= '<kbd>' + php/pound + '</kbd>';">Pound</button>
+
+    </div>
+    </center>
+</div>
+
+    <br>
+
+    <center>
+    <div class="col-md-12">
+        <a href="index.html"><button class="btn btn-success btn-lg">Restart</button></a>
+
+    </div>
+   </center>
+
+   
+
+</body>
+</html>
